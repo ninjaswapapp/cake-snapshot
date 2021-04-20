@@ -1,0 +1,30 @@
+{
+  "name": "cake-snapshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "snapshot.js",
+  "scripts": {
+    "start": "node snapshot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "async": "^3.2.0",
+    "jsdom": "^16.5.1",
+    "web3": "^1.0.0-beta.55",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.1.0",
+    "hardhat": "^2.1.2",
+    "csv-writer": "^1.6.0",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.20",
+    "sequelize": "^4.37.10",
+    "mysql": "^2.15.0",
+    "mysql2": "^2.1.0"
+  }
+}

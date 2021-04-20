@@ -1,0 +1,8 @@
+{
+    "script": "snapshot.js",
+    "watch": true,
+    "env_production" : {
+    "NODE_ENV": "production"
+  },
+    "name": "CAKE-SNAPSHOT"
+}
