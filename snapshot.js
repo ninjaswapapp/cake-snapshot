@@ -55,7 +55,7 @@ async function filter(holders){
                 console.log('===============================')
                 filtered.push(holder)
             }
-            await delay(100);
+            await delay(1000);
         }
     return filtered;
 }
