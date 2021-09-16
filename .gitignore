@@ -142,3 +142,4 @@ temp/
 .ionide
 config/*
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,dotenv
+devConfig.json

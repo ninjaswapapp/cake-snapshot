@@ -41,11 +41,20 @@ async function scanBlocks(startBlock) {
     }
 }
 async function filter(holders){
+    
     var filtered = [];
         for (let holder of holders) {
             holder.address = holder.address.toLowerCase();
-            var balance = await checkBalance(holder.address)
-            balance = await web3.utils.fromWei(balance, 'ether')
+           // var balance = await checkBalance(holder.address)
+            var getter = await axios.get(`https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&address=${holder.address}&tag=latest&apikey=UC13CYW46ZI6C2PK8DZCNHZGK31RPTFHY4`);
+            var data = getter.data;
+            let getbalance = '0' ;
+            if (data.result && typeof data.result === 'string') {
+                getbalance = data.result;
+            } else if(typeof data.error === 'object' && data.error.message){
+                getbalance = '0'
+            }
+            var balance = await web3.utils.fromWei(getbalance, 'ether')
             var checkAddress = await isContract(holder.address)
             if(!checkAddress && Number(balance) > 0.01 &&  Number(balance) < 50) {
                 console.log("New Address Found")
@@ -55,9 +64,10 @@ async function filter(holders){
                 console.log('===============================')
                 filtered.push(holder)
             }
-            await delay(1000);
+            await delay(250);
         }
     return filtered;
+    
 }
 async function writeDb(holders) {
     async.eachSeries(holders, function(item, callback) {
@@ -101,8 +111,8 @@ async function checkBalance(target) {
     while(true){
         if(scanCompleted){
             console.log("====ScanCompleted======");
-            await delay(20000);
-            console.log("====waited 20 sec ======");
+            await delay(2000);
+            console.log("====waited 2 sec ======");
             const currenBlock = await web3.eth.getBlockNumber();
             const lastUpdated = await db.snapshot.findOne({where: {  }, order: [['id', 'DESC' ]] })
            if(lastUpdated !== null && lastUpdated !== ''){

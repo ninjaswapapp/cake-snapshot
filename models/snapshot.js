@@ -15,10 +15,16 @@ module.exports = (sequelize, DataTypes) => {
         balance:{ type: DataTypes.DOUBLE(16, 8) , defaultValue: 0 },
         block:{ type:  DataTypes.INTEGER(20) , defaultValue: 0 },
         tx: DataTypes.STRING,
+
         status: {
             type: DataTypes.ENUM,
-            values: ['unclaimed', 'claimed'],
+            values: ['unclaimed', 'claimed' ,'waiting'],
             defaulValue: 'unclaimed'
+        },
+        btype: {
+            type: DataTypes.ENUM,
+            values: ['CAKE','NINJA-CAKE-LP','CAKE-BNB-LP'],
+            defaulValue: 'CAKE'
         },
     }, {
         tableName: 'snapshot',
