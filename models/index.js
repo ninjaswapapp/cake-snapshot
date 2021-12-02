@@ -19,6 +19,7 @@ if (config.use_env_variable) {
 
 db.sequelize = sequelize;
 db.snapshot = require('../models/snapshot.js')(sequelize, Sequelize);
+db.earnings = require('../models/earnings.js')(sequelize, Sequelize);
 
 
 module.exports = db;

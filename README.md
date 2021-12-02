@@ -42,3 +42,24 @@ This airdrop was total amount of 120k ninja tokens to Cake holders and Ninja-cak
 [TX # 18 ](https://bscscan.com/tx/0x02a2b0c0d315a72a6102987a186372cc4978516076e3a8004ebafe022327f7e8)
 
 [TX # 19 ](https://bscscan.com/tx/0x806ba872bd4a3840e8b7e7470858514872b333aafc59ec01bda34403d4edf053)
+
+## NinjaSwap Bounty Distribution
+
+NinjaSwap's airdrop distributed on 1st December 2021. 
+
+
+[TX # 1 ](https://bscscan.com/tx/0x0f3b1466ada746275a09db9d6df5d9e2cdfb376fa76203aa3656fcd5e20ab0ce)
+
+[TX # 2 ](https://bscscan.com/tx/0xd03fca5e5f5bd47b22faf786e4bcdf2a5dd467ca8d5234e82efe69e0c36735f4)
+
+[TX # 3 ](https://bscscan.com/tx/0x3fad5e2d81e74ba6a9a09e2aec895ba818c834f63a967147ec99e3bdbaf371c7)
+
+[TX # 4 ](https://bscscan.com/tx/0x7e089bf02c9c11ba1b14ebf542c9a4915032aba2f8a52175196c43e51e20c6b9)
+
+[TX # 5 ](https://bscscan.com/tx/0x7577c75610641e5db452ee1ca07452a436c8a9c8efce76ca686a06aca0e9a74a)
+
+[TX # 6 ](https://bscscan.com/tx/0x6e245e9310ed1a025a3484c0c942d3adbd2bf6ca65c5f7111f8951b8ebe10bfd)
+
+[TX # 7 ](https://bscscan.com/tx/0x7fdbabd374c63a09893a67314673021b76a914b44eb13561e11865599bc144da)
+
+[TX # 8 ](https://bscscan.com/tx/0x82395b664b120835efabd1b04c004107aabdf20fbdc8c67a861e326b5d51f86b)
